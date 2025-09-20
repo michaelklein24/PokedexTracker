@@ -1,8 +1,5 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/pokedextracker
-    username: postgres
-    password: password
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:

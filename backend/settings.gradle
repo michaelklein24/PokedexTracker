@@ -1,0 +1,9 @@
+rootProject.name = 'backend'
+include 'user-api'
+include 'user'
+include 'pokedex'
+include 'pokedex-api'
+include 'server'
+include 'pokemon'
+include 'pokemon-api'
+
