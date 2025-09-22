@@ -10,7 +10,7 @@ import java.util.Set;
 @Entity
 public class PokemonModel {
     @Id
-    private Long sequenceNumber;
+    private String sequenceNumber;
     private String name;
 
     @ManyToMany
