@@ -26,9 +26,6 @@ public class PokedexEntryModel {
     @JoinColumn(name = "pokemon_sequence_number", nullable = false, insertable=false, updatable=false)
     private PokemonModel pokemon;
 
-    @Column(nullable = false)
-    private Long requiredQuantity;
-
     @OneToMany(mappedBy = "pokedexEntry", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ChallengeModel> challenges = new ArrayList<>();
 }

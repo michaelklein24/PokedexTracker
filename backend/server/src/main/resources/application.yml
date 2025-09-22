@@ -14,4 +14,11 @@ spring:
       encoding: UTF-8
       mode: always
       schema-locations:
-      data-locations: classpath:data/foundation/*.sql
+      data-locations:
+        - classpath:data/foundation/gme_game.sql
+        - classpath:data/foundation/pkm_pokemon.sql
+        - classpath:data/foundation/gme_game_pokemon.sql
+        - classpath:data/foundation/pkm_type.sql
+        - classpath:data/foundation/pkm_pokemon_type.sql
+        - classpath:data/foundation/pkx_pokedex.sql
+      transaction-mode: none

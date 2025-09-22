@@ -18,6 +18,7 @@ public class PokedexModel {
     private Long pokedexId;
 
     @Column(nullable = false)
+    @Enumerated(value = EnumType.STRING)
     private Game game;
 
     @OneToMany(mappedBy = "pokedex", cascade = CascadeType.ALL, orphanRemoval = true)

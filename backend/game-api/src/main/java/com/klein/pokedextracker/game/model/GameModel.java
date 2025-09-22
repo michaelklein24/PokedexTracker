@@ -13,7 +13,9 @@ public class GameModel {
 
     @Id
     @Enumerated(EnumType.STRING)
-    private Game name;
+    private Game id;
+
+    private String name;
 
     @ManyToMany
     @JoinTable(
