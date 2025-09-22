@@ -1,0 +1,6 @@
+dependencies {
+    api project(":game-api")
+    implementation project(":pokemon-api")
+    implementation project(":i18n-api")
+    implementation project(":core")
+}

@@ -1,4 +1,3 @@
 dependencies {
     implementation project(":pokemon-api")
-    implementation project(":game-api")
 }

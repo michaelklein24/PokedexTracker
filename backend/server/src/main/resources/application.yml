@@ -2,9 +2,16 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
   jpa:
+    defer-datasource-initialization: true
     hibernate:
       ddl-auto: update
     show-sql: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  sql:
+    init:
+      encoding: UTF-8
+      mode: always
+      schema-locations:
+      data-locations: classpath:data/foundation/*.sql

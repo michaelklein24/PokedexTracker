@@ -7,13 +7,15 @@ plugins {
 }
 
 dependencies {
-    implementation project(":pokedex")
-    implementation project(":pokemon")
-    implementation project(":user")
+    implementation project(":core")
+    api project(":i18n")
+    api project(":pokedex")
+    api project(":game")
+    api project(":pokemon")
+    api project(":user")
 
-    implementation "org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion"
+
     implementation "org.springframework.boot:spring-boot-starter-security:$springBootVersion"
-    implementation "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
     runtimeOnly 'org.postgresql:postgresql'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -31,4 +33,6 @@ tasks.register('bootRunDev', BootRun) {
     args = ['--spring.profiles.active=dev']
 
     classpath = sourceSets.main.runtimeClasspath
+
+    dependsOn(':server:build')
 }
