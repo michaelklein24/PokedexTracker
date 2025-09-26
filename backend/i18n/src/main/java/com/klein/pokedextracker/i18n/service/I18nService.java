@@ -13,7 +13,7 @@ import java.util.Locale;
 @RequiredArgsConstructor
 public class I18nService implements Ii18nService {
 
-    private I18nRepository i18nRepo;
+    private final I18nRepository i18nRepo;
     private final MessageSource messageSource;
 
     @Override

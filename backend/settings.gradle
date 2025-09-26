@@ -11,4 +11,8 @@ include 'game-api'
 include 'core'
 include 'i18n'
 include 'i18n-api'
+include 'auth'
+include 'auth-api'
+include 'config-api'
+include 'config'
 

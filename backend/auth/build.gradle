@@ -1,0 +1,13 @@
+dependencies {
+    api project(":core")
+    api project(":user-api")
+    api project(":config-api")
+    api project(":auth-api")
+    api project(":i18n-api")
+
+    api "io.jsonwebtoken:jjwt-api:${jsonWebTokenVersion}"
+    api "io.jsonwebtoken:jjwt-impl:${jsonWebTokenVersion}"
+    api "io.jsonwebtoken:jjwt-jackson:${jsonWebTokenVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-security:${springBootVersion}"
+    testImplementation "org.springframework.security:spring-security-test:${springBootVersion}"
+}

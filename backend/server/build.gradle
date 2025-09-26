@@ -8,18 +8,19 @@ plugins {
 
 dependencies {
     implementation project(":core")
+    api project(":config")
     api project(":i18n")
     api project(":pokedex")
     api project(":game")
     api project(":pokemon")
     api project(":user")
+    api project(":auth")
 
 
-    implementation "org.springframework.boot:spring-boot-starter-security:$springBootVersion"
     runtimeOnly 'org.postgresql:postgresql'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.security:spring-security-test'
+
 }
 
 application {

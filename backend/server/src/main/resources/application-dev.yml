@@ -9,3 +9,7 @@ spring:
 #  sql:
 #    init:
 #      data-locations: classpath:data/intellij/
+
+api:
+  jwt:
+    secret: GE4AxDKB$NA!dEb4hoiyiC!Dh*825UC*ArRH
